@@ -1,5 +1,5 @@
 {
-    "name": "spiral/goridge",
+    "name": "spiral/kctld-goridge",
     "type": "goridge",
     "description": "High-performance PHP-to-Golang RPC bridge",
     "license": "MIT",
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spiral\\Goridge\\": "src"
+            "KCTLD\\Spiral\\Goridge\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spiral\\Goridge\\Tests\\": "tests/Goridge"
+            "KCTLD\\Spiral\\Goridge\\Tests\\": "tests/Goridge"
         }
     },
     "suggest": {
