@@ -1,11 +1,9 @@
 <?php
 
-declare(strict_types=1);
+declare (strict_types=1);
+namespace KCTLD\Spiral\Goridge;
 
-namespace Spiral\Goridge;
-
-use Spiral\Goridge\Exception\RelayException;
-
+use KCTLD\Spiral\Goridge\Exception\RelayException;
 /**
  * Blocking, duplex relay.
  */
@@ -15,10 +13,9 @@ interface RelayInterface
      * @return Frame
      * @throws RelayException
      */
-    public function waitFrame(): Frame;
-
+    public function waitFrame() : Frame;
     /**
      * @param Frame $frame
      */
-    public function send(Frame $frame): void;
+    public function send(Frame $frame) : void;
 }

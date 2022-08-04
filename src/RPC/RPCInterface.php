@@ -1,12 +1,10 @@
 <?php
 
-declare(strict_types=1);
+declare (strict_types=1);
+namespace KCTLD\Spiral\Goridge\RPC;
 
-namespace Spiral\Goridge\RPC;
-
-use Spiral\Goridge\Exception\GoridgeException;
-use Spiral\Goridge\RPC\Exception\RPCException;
-
+use KCTLD\Spiral\Goridge\Exception\GoridgeException;
+use KCTLD\Spiral\Goridge\RPC\Exception\RPCException;
 interface RPCInterface
 {
     /**
@@ -16,8 +14,7 @@ interface RPCInterface
      * @param string $service
      * @return RPCInterface
      */
-    public function withServicePrefix(string $service): self;
-
+    public function withServicePrefix(string $service) : self;
     /**
      * Create RPC instance with service specific codec.
      *
@@ -25,8 +22,7 @@ interface RPCInterface
      * @param CodecInterface $codec
      * @return RPCInterface
      */
-    public function withCodec(CodecInterface $codec): self;
-
+    public function withCodec(CodecInterface $codec) : self;
     /**
      * Invoke remove RoadRunner service method using given payload (free form).
      *

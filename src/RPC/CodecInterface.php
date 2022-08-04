@@ -1,11 +1,9 @@
 <?php
 
-declare(strict_types=1);
+declare (strict_types=1);
+namespace KCTLD\Spiral\Goridge\RPC;
 
-namespace Spiral\Goridge\RPC;
-
-use Spiral\Goridge\RPC\Exception\CodecException;
-
+use KCTLD\Spiral\Goridge\RPC\Exception\CodecException;
 /**
  * Serializes incoming and deserializes received messages.
  */
@@ -16,15 +14,13 @@ interface CodecInterface
      *
      * @return int
      */
-    public function getIndex(): int;
-
+    public function getIndex() : int;
     /**
      * @param mixed $payload
      * @return string
      * @throws CodecException
      */
-    public function encode($payload): string;
-
+    public function encode($payload) : string;
     /**
      * @param string $payload
      * @param mixed|null $options
